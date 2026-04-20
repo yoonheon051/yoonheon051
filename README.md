@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v5
       - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
+          GITHUB_TOKEN: ${{JANDI}}
           USERNAME: ${{yoonheon051}}
       - name: Commit & Push
         run: |
